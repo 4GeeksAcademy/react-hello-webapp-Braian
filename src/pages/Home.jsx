@@ -1,16 +1,10 @@
-import rigoImageUrl from "../assets/img/rigo-baby.jpg";
-import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
+import ContactCard from "../components/contactCard.jsx";
 
 export const Home = () => {
-
-  const {store, dispatch} =useGlobalReducer()
-
-	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-		</div>
-	);
-}; 
+  return (
+    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "20px" }}>
+      <h1 style={{ textAlign: "center" }}>CRUD de Contactos</h1>
+      <ContactCard />
+    </div>
+  );
+};
